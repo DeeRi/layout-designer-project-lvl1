@@ -9,22 +9,54 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
-      <a><img src="" alt="Логотип ЖК 'Лунное море'"/></a>
-      <nav>
-        <ul>
-          <li><a href="">Преимущества</a></li>
-          <li><a href="">О ЖК</a></li>
-          <li><a href="">Места для отдыха</a></li>
+
+      <!--PAGE-HEADER-->
+
+    <header class="page-header">
+
+        <!--LOGO-->
+
+      <div class="page-header__logo">
+        <a
+          ><img
+            src="images/logo.svg"
+            width="50"
+            height="50"
+            alt="Логотип ЖК 'Лунное море'"
+          />
+          <p>Лунное море</p>
+        </a>
+      </div>
+
+      <!--NAVIGATION-->
+
+      <nav class="page-header__navigation">
+        <ul class="page-header__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#advantages">Преимущества</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#about">О ЖК</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#places">Места для отдыха</a>
+          </li>
         </ul>
       </nav>
-      <h1>ЖК "Лунное море"</h1>
-      <p>Место, откуда не хочется улетать</p>
-      <a href="">Забронировать</a>
     </header>
 
     <main>
+      <!--PROMO-->
+
       <section>
+        <h1>ЖК "Лунное море"</h1>
+        <p>Место, откуда не хочется улетать</p>
+        <a href="">Забронировать</a>
+      </section>
+
+      <!--ADVANTAGES-->
+
+      <section class="advantages" id="advantages">
         <ul>
           <li>
             <h2>Уникальный вид</h2>
@@ -40,16 +72,25 @@
           </li>
         </ul>
       </section>
-      <section>
+
+      <!--ABOUT-->
+
+      <section class="about" id="about">
         <h2>О ЖК "Лунное море"</h2>
         <p>текст</p>
         <img src="" alt="" />
       </section>
-      <section>
+
+      <!--PLACES-->
+
+      <section class="places" id="places">
         <h2>Места для отдыха</h2>
         <p>текст</p>
         <img src="" alt="" />
       </section>
+
+      <!--APPLICATION-->
+
       <section>
         <h2>Оставьте заявку сегодня</h2>
         <form action="">
@@ -83,6 +124,8 @@
         </form>
       </section>
     </main>
+
+    <!--FOOTER-->
 
     <footer>
       <a href=""><img src="" alt="Логотип ЖК 'Лунное море'"/></a>
