@@ -25,7 +25,6 @@ a {
   top: 0;
   left: 0;
   background-color: #ffffff;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,31 +60,71 @@ a {
 }
 
 .advantages__item {
-    width: 300px;
+  width: 300px;
 }
 
 /*ABOUT*/
 .about {
-    background-color: #e6e6e6;
+  background-color: #e6e6e6;
 }
 
 .about__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about__text {
-    width: 350px;
+  width: 350px;
 }
 
 /*PLACES*/
 .places__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .places__text {
-    width: 350px;
+  width: 350px;
+}
+
+/*FORM*/
+.form__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__button {
+background: #ffffff;
+border: 1px solid #00ffb3;
+border-radius: 8%;
+color: #00ffb3;
+font-weight: bold;
+}
+
+.field {
+  width: 400px;
+  border: 3px solid #00ffb3;
+}
+
+.field__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.field__title {
+    font-weight: bold;
+    color: #00ffb3;
+}
+
+.field__capture {
+    font-weight: bold;
+}
+
+.field__information {
+    width: 150px;
+    height: 20px;
 }

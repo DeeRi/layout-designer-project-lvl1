@@ -143,39 +143,51 @@
         </div>
       </section>
 
-      <!--APPLICATION-->
+      <!--FORM-->
 
       <section class="form" id="form">
-        <h2>Оставьте заявку сегодня</h2>
-        <form action="">
-          <fieldset>
-            <legend>Параметры квартиры</legend>
-            <select name="" id="room_number">
-              <label for="room_number">Количество комнат:</label>
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-            </select>
-            <select name="" id="condition">
-              <label for="condition">Отделка:</label>
-              <option value="">Без отделки</option>
-              <option value="">С отделкой</option>
-            </select>
-          </fieldset>
+        <div class="form__content container">
+          <h2>Оставьте заявку сегодня!</h2>
+          <form action="">
+            <fieldset class="field">
+              <legend class="field__title">Параметры квартиры</legend>
+              <p class="field__item">
+                <label class="field__capture" for="room_number">Количество комнат:</label>
+                <select class="field__information" name="" id="room_number">
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                </select>
+              </p>
 
-          <fieldset>
-            <legend>Контактная информация</legend>
-            <label for="">Имя:</label>
-            <input type="text" />
+              <p class="field__item">
+                <label class="field__capture" for="condition">Отделка:</label>
+                <select class="field__information" name="" id="condition">
+                  <option value="">Без отделки</option>
+                  <option value="">Частичная отделка</option>
+                  <option value="">"Под ключ"</option>
+                </select>
+              </p>
+            </fieldset>
 
-            <label for="">Телефон:</label>
-            <input type="text" />
-
-            <label for="">E-mail:</label>
-            <input type="text" />
-          </fieldset>
-          <input type="button" value="Оставить заявку" />
-        </form>
+            <fieldset class="field">
+              <legend class="field__title">Контактная информация</legend>
+              <p class="field__item">
+                <label class="field__capture" for="">Имя:</label>
+                <input class="field__information" type="text" />
+              </p>
+              <p class="field__item">
+                <label class="field__capture" for="">Телефон:</label>
+                <input class="field__information" type="text" />
+              </p>
+              <p class="field__item">
+                <label class="field__capture" for="">E-mail:</label>
+                <input  class="field__information" type="text" />
+              </p>
+            </fieldset>
+            <input class="form__button" type="button" value="Оставить заявку" />
+          </form>
+        </div>
       </section>
     </main>
 
