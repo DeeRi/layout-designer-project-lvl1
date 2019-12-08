@@ -13,16 +13,16 @@
 
     <header class="page-header">
       <!--LOGO-->
-
-      <div class="page-header__logo">
-        <a
+      <div class="page-header__logo logo">
+        <a class="logo__link"
           ><img
+            class="logo__image"
             src="images/logo.svg"
-            width="50"
-            height="50"
+            width="35"
+            height="37"
             alt="Логотип ЖК 'Лунное море'"
           />
-          <p>Лунное море</p>
+          <p class="logo__text">Лунное море</p>
         </a>
       </div>
 
@@ -57,7 +57,7 @@
           />
           <h1>ЖК "Лунное море"</h1>
           <p>Место, откуда не хочется улетать</p>
-          <a href="#form">Забронировать</a>
+          <a class="promo__button" href="#form">Забронировать</a>
         </div>
       </section>
 
@@ -112,8 +112,8 @@
           <img
             src="images/moon-1.jpg"
             alt="Фото поверхности Луны"
-            width="300"
-            height="200"
+            width="390"
+            height="250"
           />
         </div>
       </section>
@@ -125,8 +125,8 @@
           <img
             src="images/moon-2.jpg"
             alt="Места отдыха на Луне"
-            width="300"
-            height="200"
+            width="390"
+            height="250"
           />
           <div class="places__text">
             <h2>Места для отдыха</h2>
@@ -148,24 +148,26 @@
       <section class="form" id="form">
         <div class="form__content container">
           <h2>Оставьте заявку сегодня!</h2>
-          <form action="">
+          <form action="URL" method="POST">
             <fieldset class="field">
               <legend class="field__title">Параметры квартиры</legend>
               <p class="field__item">
-                <label class="field__capture" for="room_number">Количество комнат:</label>
-                <select class="field__information" name="" id="room_number">
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
+                <label class="field__capture" for="room_number"
+                  >Количество комнат:</label
+                >
+                <select class="field__information field__information--small" name="room_number" id="room_number">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
                 </select>
               </p>
 
               <p class="field__item">
                 <label class="field__capture" for="condition">Отделка:</label>
-                <select class="field__information" name="" id="condition">
-                  <option value="">Без отделки</option>
-                  <option value="">Частичная отделка</option>
-                  <option value="">"Под ключ"</option>
+                <select class="field__information field__information--small" name="condition" id="condition">
+                  <option>Без отделки</option>
+                  <option>Частичная отделка</option>
+                  <option>"Под ключ"</option>
                 </select>
               </p>
             </fieldset>
@@ -173,16 +175,16 @@
             <fieldset class="field">
               <legend class="field__title">Контактная информация</legend>
               <p class="field__item">
-                <label class="field__capture" for="">Имя:</label>
-                <input class="field__information" type="text" />
+                <label class="field__capture" for="name">Имя:</label>
+                <input class="field__information" type="text" id="name"/>
               </p>
               <p class="field__item">
-                <label class="field__capture" for="">Телефон:</label>
-                <input class="field__information" type="text" />
+                <label class="field__capture" for="phone">Телефон:</label>
+                <input class="field__information" type="text" id="phone"/>
               </p>
               <p class="field__item">
-                <label class="field__capture" for="">E-mail:</label>
-                <input  class="field__information" type="text" />
+                <label class="field__capture" for="mail">E-mail:</label>
+                <input class="field__information" type="text" id="mail" />
               </p>
             </fieldset>
             <input class="form__button" type="button" value="Оставить заявку" />
@@ -193,18 +195,40 @@
 
     <!--FOOTER-->
 
-    <footer>
-      <a href=""><img src="" alt="Логотип ЖК 'Лунное море'"/></a>
-      <h3>Проектная документация</h3>
-      <ul>
-        <li><a href="">Скачать</a></li>
-        <li><a href="">Посмотреть на сайте</a></li>
-      </ul>
-      <h3>О застройщике</h3>
-      <ul>
-        <li><a href="">Отзывы</a></li>
-        <li><a href="">Сайт компании</a></li>
-      </ul>
+    <footer class="footer-main">
+      <div class="footer-main__wrapper">
+        <div class="footer-main__col">
+          <div class="page-header__logo logo">
+            <a class="logo__link"
+              ><img
+                class="logo__image"
+                src="images/logo.svg"
+                width="35"
+                height="37"
+                alt="Логотип ЖК 'Лунное море'"
+              />
+              <p class="logo__text">Лунное море</p>
+            </a>
+          </div>
+          <span>&#169; 2032 год</span>
+        </div>
+        <div class="footer-main__col">
+          <h3>Проектная документация</h3>
+          <ul class="footer-main__list">
+            <li><a class="footer-main__link" href="">Скачать</a></li>
+            <li>
+              <a class="footer-main__link" href="">Посмотреть на сайте</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-main__col">
+          <h3>О застройщике</h3>
+          <ul class="footer-main__list">
+            <li><a class="footer-main__link" href="">Отзывы</a></li>
+            <li><a class="footer-main__link" href="">Сайт компании</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
