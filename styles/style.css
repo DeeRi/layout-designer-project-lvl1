@@ -32,18 +32,18 @@ a {
   padding-top: 15px;
 }
 
-.page-header__logo {
+.page-header-logo {
   padding-left: 20px;
   font-weight: bold;
 }
 
-.logo__link{
+.logo-link{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.logo__image {
+.logo-image {
     margin-right: 18px;
 }
 
@@ -54,15 +54,15 @@ a {
   font-weight: bold;
 }
 
-.site-list__item {
+.site-list-item {
   margin-right: 20px;
 }
 
-.site-list__item:last-child {
+.site-list-item:last-child {
   margin-right: 0px;
 }
 
-.site-list__link {
+.site-list-link {
   color: #303846;
 }
 /*PROMO*/
@@ -78,7 +78,7 @@ a {
   padding-bottom: 100px;
 }
 
-.promo__content {
+.promo-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +86,7 @@ a {
   text-align: center;
 }
 
-.promo__button {
+.promo-button {
   padding: 10px;
   color: #ffffff;
   font-weight: bold;
@@ -99,14 +99,14 @@ a {
     padding-top: 69px;
 }
 
-.advantages__list {
+.advantages-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.advantages__item {
+.advantages-item {
   width: 300px;
 }
 
@@ -117,13 +117,13 @@ a {
   padding-bottom: 62px;
 }
 
-.about__content {
+.about-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.about__text {
+.about-text {
   width: 500px;
 }
 
@@ -133,18 +133,18 @@ a {
   padding-bottom: 71px;
 }
 
-.places__content {
+.places-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.places__text {
+.places-text {
   width: 500px;
 }
 
 /*FORM*/
-.form__content {
+.form-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,7 +152,7 @@ a {
   padding-bottom: 68px;
 }
 
-.form__button {
+.form-button {
   padding: 13px 25px;
   background: #ffffff;
   border: 1px solid #00d3ac;
@@ -168,27 +168,27 @@ a {
   border: 3px solid #00d3ac;
 }
 
-.field__item {
+.field-item {
   display: flex;
   justify-content: space-between;
 }
 
-.field__title {
+.field-title {
   font-weight: bold;
   color: #00d3ac;
 }
 
-.field__capture {
+.field-capture {
   font-weight: bold;
 }
 
-.field__information {
+.field-information {
   width: 160px;
   height: 23px;
   border-radius: 10px;
 }
 
-.field__information--small {
+.field-information--small {
   width: 120px;
   height: 25px;
   border-radius: 10px;
@@ -202,15 +202,15 @@ a {
   color: #ffffff;
 }
 
-.footer-main__wrapper {
+.footer-main-wrapper {
   display: flex;
   justify-content: space-around;
 }
 
-.footer-main .page-header__logo {
+.footer-main .page-header-logo {
   padding-left: 0;
 }
 
-.footer-main__link {
+.footer-main-link {
   color: #ffffff;
 }
