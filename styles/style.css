@@ -29,7 +29,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 15px;
 }
 
 .page-header-logo {
@@ -37,14 +36,14 @@ a {
   font-weight: bold;
 }
 
-.logo-link{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.logo-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo-image {
-    margin-right: 18px;
+  margin-right: 18px;
 }
 
 .site-list {
@@ -65,6 +64,16 @@ a {
 .site-list-link {
   color: #303846;
 }
+
+.site-list-link:hover {
+  color: #000000;
+}
+
+.site-list-link:active,
+.site-list-link:focus {
+  color: #00d3ac;
+}
+
 /*PROMO*/
 .promo {
   color: #ffffff;
@@ -73,8 +82,8 @@ a {
   background-image: url("../images/banner.png");
   z-index: -1;
   background-size: cover;
-  background-position: center;
-  padding-top: 200px;
+  background-position: bottom;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -86,17 +95,54 @@ a {
   text-align: center;
 }
 
+.promo-title {
+  font-size: 48px;
+  margin: 0;
+  margin-top: 17px;
+}
+
+.promo-motto {
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 3px;
+}
+
 .promo-button {
-  padding: 10px;
+  padding: 13px 14px;
   color: #ffffff;
   font-weight: bold;
   border: 1px solid #ffffff;
   border-radius: 10px;
+  letter-spacing: 0.8px;
+  transition: all 0.3s ease;
+  margin-top: 23px;
+}
+
+.promo-button:hover {
+  background-color: #303846;
+}
+
+.promo-button:active,
+.promo-button:focus {
+  background-color: #1d2025;
 }
 
 /*ADVANTAGES*/
 .advantages {
-    padding-top: 69px;
+  padding-top: 69px;
+}
+
+.advantages-title {
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.advantages-text {
+  line-height: 23px;
+  margin: 0;
 }
 
 .advantages-list {
@@ -104,10 +150,11 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0;
 }
 
 .advantages-item {
-  width: 300px;
+  width: 325px;
 }
 
 /*ABOUT*/
@@ -124,7 +171,22 @@ a {
 }
 
 .about-text {
-  width: 500px;
+  width: 520px;
+  line-height: 23px;
+}
+
+.about-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+
+.about-info {
+  margin: 0;
+}
+
+.about-info-first {
+  margin-bottom: 20px;
 }
 
 /*PLACES*/
@@ -140,57 +202,111 @@ a {
 }
 
 .places-text {
-  width: 500px;
+  width: 520px;
+  line-height: 23px;
+}
+
+.places-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+
+.places-info {
+  margin: 0;
+}
+
+.places-info-first {
+  margin-bottom: 20px;
 }
 
 /*FORM*/
+.form {
+  background-color: #f7f7f7;
+}
+
 .form-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-bottom: 68px;
+  padding-top: 30px;
+}
+
+.form-title {
+  margin: 0;
+  margin-bottom: 34px;
+  font-size: 32px;
 }
 
 .form-button {
-  padding: 13px 25px;
-  background: #ffffff;
+  padding: 13px 36px;
+  background: transparent;
   border: 1px solid #00d3ac;
   border-radius: 5px;
   color: #00d3ac;
   font-weight: bold;
-  font-size: 14px;
-  margin-top: 15px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #00d3ac;
+  color: #f7f7f7;
+}
+
+.form-button:active,
+.form-button:focus {
+  background-color: #03ad8e;
+  color: #f7f7f7;
 }
 
 .field {
-  width: 365px;
-  border: 3px solid #00d3ac;
+  width: 366px;
+  border: 2px solid #00d3ac;
+  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 70px;
+  margin-bottom: 17px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
 }
 
 .field-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0;
 }
 
 .field-title {
   font-weight: bold;
   color: #00d3ac;
+  font-size: 22px;
+  letter-spacing: 0.3px;
 }
 
 .field-capture {
   font-weight: bold;
+  min-width: 170px;
 }
 
 .field-information {
   width: 160px;
   height: 23px;
   border-radius: 10px;
+  border: 1px solid #d5d5d5;
+  padding-left: 8px;
+  margin-bottom: 10px;
 }
 
 .field-information--small {
   width: 120px;
-  height: 25px;
+  height: 35px;
   border-radius: 10px;
 }
 
@@ -211,6 +327,28 @@ a {
   padding-left: 0;
 }
 
+.footer-main .logo-text {
+  font-size: 15px;
+  letter-spacing: 0.1px;
+}
+
+.footer-main-year {
+  display: block;
+  font-size: 14px;
+  margin-top: 13px;
+}
+
 .footer-main-link {
   color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.footer-main-link:hover {
+  color: #00d3ac;
+}
+
+.footer-main-link:active,
+.footer-main-link:focus {
+  color: #03ad8e;
 }

@@ -51,12 +51,12 @@
           <img
             class="promo-logo"
             src="images/logo.svg"
-            width="250"
-            height="250"
+            width="170"
+            height="170"
             alt=""
           />
-          <h1>ЖК "Лунное море"</h1>
-          <p>Место, откуда не хочется улетать</p>
+          <h1 class="promo-title">ЖК "Лунное море"</h1>
+          <p class="promo-motto">Место, откуда не хочется улетать</p>
           <a class="promo-button" href="#form">Забронировать</a>
         </div>
       </section>
@@ -67,23 +67,23 @@
         <div class="advantages-content container">
           <ul class="advantages-list">
             <li class="advantages-item">
-              <h2>Уникальный вид</h2>
-              <p>
+              <h2 class="advantages-title">Уникальный вид</h2>
+              <p class="advantages-text">
                 Вид на космос из вашего окна. Мы построили дома с большими
                 окнами, чтобы вы могли наслаждаться метеоритными потоками.
               </p>
             </li>
             <li class="advantages-item">
-              <h2>Инфраструктура</h2>
-              <p>
+              <h2 class="advantages-title">Инфраструктура</h2>
+              <p class="advantages-text">
                 Прекрасные дороги рядом с домом. Много мест для прогулки. Всего
                 в 200 км. от посёлка находится кольцо гор Кордильеры, на которых
                 вы сможете провести незабываемые выходные.
               </p>
             </li>
             <li class="advantages-item">
-              <h2>Близость к Москве</h2>
-              <p>
+              <h2 class="advantages-title">Близость к Москве</h2>
+              <p class="advantages-text">
                 При небольшой цене мы располагаемся близко к МКАД. Всего 384 000
                 километров и вы в самом сердце России.
               </p>
@@ -97,14 +97,14 @@
       <section class="about" id="about">
         <div class="about-content container">
           <div class="about-text">
-            <h2>О ЖК "Лунное море"</h2>
-            <p>
+            <h2 class="about-title">О ЖК "Лунное море"</h2>
+            <p class="about-info about-info-first">
               Все чаще жители Москвы предпочитают загородный дом городской
               квартире, к тому же связь с мегаполисом не теряется – современные
               скоростные трассы позволяют без труда добираться до столицы и
               обратно.
             </p>
-            <p>
+            <p class="about-info about-info-second">
               Мы построили наши дома на самом близком к Солнцу спутнике, всего в
               380 тысяч километров от Земли.
             </p>
@@ -129,13 +129,13 @@
             height="250"
           />
           <div class="places-text">
-            <h2>Места для отдыха</h2>
-            <p>
+            <h2 class="places-title">Места для отдыха</h2>
+            <p class="places-info places-info-first">
               Луна обладает всеми условиями для комфортного отдыха от большого
               города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее
               кольцо гор всего в 200 километров от вашей квартиры.
             </p>
-            <p>
+            <p class="places-info places-info-second">
               Дома располагаются в новом районе «Лунные моря». При необходимости
               есть автобусы до района «Лунный материк».
             </p>
@@ -147,7 +147,7 @@
 
       <section class="form" id="form">
         <div class="form-content container">
-          <h2>Оставьте заявку сегодня!</h2>
+          <h2 class="form-title">Оставьте заявку сегодня!</h2>
           <form action="URL" method="POST">
             <fieldset class="field">
               <legend class="field-title">Параметры квартиры</legend>
@@ -155,7 +155,11 @@
                 <label class="field-capture" for="room_number"
                   >Количество комнат:</label
                 >
-                <select class="field-information field-information--small" name="room_number" id="room_number">
+                <select
+                  class="field-information field-information--small"
+                  name="room_number"
+                  id="room_number"
+                >
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -164,7 +168,11 @@
 
               <p class="field-item">
                 <label class="field-capture" for="condition">Отделка:</label>
-                <select class="field-information field-information--small" name="condition" id="condition">
+                <select
+                  class="field-information field-information--small"
+                  name="condition"
+                  id="condition"
+                >
                   <option>Без отделки</option>
                   <option>Частичная отделка</option>
                   <option>"Под ключ"</option>
@@ -176,18 +184,18 @@
               <legend class="field-title">Контактная информация</legend>
               <p class="field-item">
                 <label class="field-capture" for="name">Имя:</label>
-                <input class="field-information" type="text" id="name"/>
+                <input class="field-information" type="text" id="name" />
               </p>
               <p class="field-item">
                 <label class="field-capture" for="phone">Телефон:</label>
-                <input class="field-information" type="text" id="phone"/>
+                <input class="field-information" type="text" id="phone" />
               </p>
               <p class="field-item">
                 <label class="field-capture" for="mail">E-mail:</label>
                 <input class="field-information" type="text" id="mail" />
               </p>
             </fieldset>
-            <input class="form-button" type="button" value="Оставить заявку" />
+            <input class="form-button" type="button" value="Отправить" />
           </form>
         </div>
       </section>
@@ -210,7 +218,7 @@
               <p class="logo-text">Лунное море</p>
             </a>
           </div>
-          <span>&#169; 2032 год</span>
+          <span class="footer-main-year">&#169; 2032 год</span>
         </div>
         <div class="footer-main-col">
           <h3>Проектная документация</h3>
