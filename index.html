@@ -11,10 +11,10 @@
   <body>
     <!--PAGE-HEADER-->
 
-    <header class="page-header">
+    <header class="page-header flex-sp-between align-items-center  w-100per">
       <!--LOGO-->
-      <div class="page-header-logo logo">
-        <a class="logo-link"
+      <div class="page-header-logo logo font-bold">
+        <a class="logo-link align-items-center "
           ><img
             class="logo-image"
             src="images/logo.svg"
@@ -29,15 +29,15 @@
       <!--NAVIGATION-->
 
       <nav class="page-header-navigation">
-        <ul class="page-header-list site-list">
+        <ul class="page-header-list site-list reset-list">
           <li class="site-list-item">
-            <a class="site-list-link" href="#advantages">Преимущества</a>
+            <a class="site-list-link link-common" href="#advantages">Преимущества</a>
           </li>
           <li class="site-list-item">
-            <a class="site-list-link" href="#about">О ЖК</a>
+            <a class="site-list-link link-common" href="#about">О ЖК</a>
           </li>
           <li class="site-list-item">
-            <a class="site-list-link" href="#places">Места для отдыха</a>
+            <a class="site-list-link link-common" href="#places">Места для отдыха</a>
           </li>
         </ul>
       </nav>
@@ -46,8 +46,8 @@
     <main>
       <!--PROMO-->
 
-      <section class="promo">
-        <div class="promo-content">
+      <section class="promo w-100per white-text font-bold">
+        <div class="promo-content align-items-center ">
           <img
             class="promo-logo"
             src="images/logo.svg"
@@ -57,7 +57,7 @@
           />
           <h1 class="promo-title">ЖК "Лунное море"</h1>
           <p class="promo-motto">Место, откуда не хочется улетать</p>
-          <a class="promo-button" href="#form">Забронировать</a>
+          <a class="promo-button button-common white-text" href="#form">Забронировать</a>
         </div>
       </section>
 
@@ -65,16 +65,16 @@
 
       <section class="advantages" id="advantages">
         <div class="advantages-content container">
-          <ul class="advantages-list">
+          <ul class="advantages-list flex-sp-between reset-list">
             <li class="advantages-item">
-              <h2 class="advantages-title">Уникальный вид</h2>
+              <h2 class="advantages-title titles-h2">Уникальный вид</h2>
               <p class="advantages-text">
                 Вид на космос из вашего окна. Мы построили дома с большими
                 окнами, чтобы вы могли наслаждаться метеоритными потоками.
               </p>
             </li>
             <li class="advantages-item">
-              <h2 class="advantages-title">Инфраструктура</h2>
+              <h2 class="advantages-title titles-h2">Инфраструктура</h2>
               <p class="advantages-text">
                 Прекрасные дороги рядом с домом. Много мест для прогулки. Всего
                 в 200 км. от посёлка находится кольцо гор Кордильеры, на которых
@@ -82,7 +82,7 @@
               </p>
             </li>
             <li class="advantages-item">
-              <h2 class="advantages-title">Близость к Москве</h2>
+              <h2 class="advantages-title titles-h2">Близость к Москве</h2>
               <p class="advantages-text">
                 При небольшой цене мы располагаемся близко к МКАД. Всего 384 000
                 километров и вы в самом сердце России.
@@ -95,9 +95,9 @@
       <!--ABOUT-->
 
       <section class="about" id="about">
-        <div class="about-content container">
-          <div class="about-text">
-            <h2 class="about-title">О ЖК "Лунное море"</h2>
+        <div class="about-content flex-sp-between align-items-center container">
+          <div class="about-text main-sections-text">
+            <h2 class="about-title titles-h2">О ЖК "Лунное море"</h2>
             <p class="about-info about-info-first">
               Все чаще жители Москвы предпочитают загородный дом городской
               квартире, к тому же связь с мегаполисом не теряется – современные
@@ -121,15 +121,15 @@
       <!--PLACES-->
 
       <section class="places" id="places">
-        <div class="places-content container">
+        <div class="places-content flex-sp-between align-items-center container">
           <img
             src="images/moon-2.jpg"
             alt="Места отдыха на Луне"
             width="390"
             height="250"
           />
-          <div class="places-text">
-            <h2 class="places-title">Места для отдыха</h2>
+          <div class="places-text main-sections-text">
+            <h2 class="places-title titles-h2">Места для отдыха</h2>
             <p class="places-info places-info-first">
               Луна обладает всеми условиями для комфортного отдыха от большого
               города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее
@@ -146,12 +146,12 @@
       <!--FORM-->
 
       <section class="form" id="form">
-        <div class="form-content container">
+        <div class="form-content align-items-center container">
           <h2 class="form-title">Оставьте заявку сегодня!</h2>
-          <form action="URL" method="POST">
+          <form class="font-bold" action="URL" method="POST">
             <fieldset class="field">
               <legend class="field-title">Параметры квартиры</legend>
-              <p class="field-item">
+              <p class="field-item flex-sp-between align-items-center">
                 <label class="field-capture" for="room_number"
                   >Количество комнат:</label
                 >
@@ -166,7 +166,7 @@
                 </select>
               </p>
 
-              <p class="field-item">
+              <p class="field-item flex-sp-between align-items-center">
                 <label class="field-capture" for="condition">Отделка:</label>
                 <select
                   class="field-information field-information--small"
@@ -182,20 +182,20 @@
 
             <fieldset class="field">
               <legend class="field-title">Контактная информация</legend>
-              <p class="field-item">
+              <p class="field-item flex-sp-between align-items-center ">
                 <label class="field-capture" for="name">Имя:</label>
                 <input class="field-information" type="text" id="name" />
               </p>
-              <p class="field-item">
+              <p class="field-item flex-sp-between align-items-center ">
                 <label class="field-capture" for="phone">Телефон:</label>
                 <input class="field-information" type="text" id="phone" />
               </p>
-              <p class="field-item">
+              <p class="field-item flex-sp-between align-items-center ">
                 <label class="field-capture" for="mail">E-mail:</label>
                 <input class="field-information" type="text" id="mail" />
               </p>
             </fieldset>
-            <input class="form-button" type="button" value="Отправить" />
+            <input class="form-button button-common" type="button" value="Отправить" />
           </form>
         </div>
       </section>
@@ -203,10 +203,10 @@
 
     <!--FOOTER-->
 
-    <footer class="footer-main">
+    <footer class="footer-main white-text">
       <div class="footer-main-wrapper">
         <div class="footer-main-col">
-          <div class="page-header-logo logo">
+          <div class="page-header-logo logo font-bold">
             <a class="logo-link"
               ><img
                 class="logo-image"
@@ -223,17 +223,17 @@
         <div class="footer-main-col">
           <h3>Проектная документация</h3>
           <ul class="footer-main-list">
-            <li><a class="footer-main-link" href="">Скачать</a></li>
+            <li><a class="footer-main-link link-common" href="">Скачать</a></li>
             <li>
-              <a class="footer-main-link" href="">Посмотреть на сайте</a>
+              <a class="footer-main-link link-common" href="">Посмотреть на сайте</a>
             </li>
           </ul>
         </div>
         <div class="footer-main-col">
           <h3>О застройщике</h3>
           <ul class="footer-main-list">
-            <li><a class="footer-main-link" href="">Отзывы</a></li>
-            <li><a class="footer-main-link" href="">Сайт компании</a></li>
+            <li><a class="footer-main-link link-common" href="">Отзывы</a></li>
+            <li><a class="footer-main-link link-common" href="">Сайт компании</a></li>
           </ul>
         </div>
       </div>
