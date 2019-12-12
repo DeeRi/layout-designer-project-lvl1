@@ -9,6 +9,7 @@
   --color-darker-turquoise: #03ad8e;
   --color-black: #000000;
   --color-white: #ffffff;
+  --header-height: 69px;
 
   /*global*/
   --palette-primary: var(--color-dark-grey);
@@ -20,6 +21,8 @@
 
   --input-border: var(--color-grey);
   --element-active: var(--color-darker-turquoise);
+
+  --promo-top-padding: calc(var(--header-height) + 37px);
 }
 
 body,
@@ -53,7 +56,7 @@ a {
   justify-content: space-between;
 }
 
-.align-items-center {
+.flex-align-items-center {
   display: flex;
   align-items: center;
 }
@@ -117,6 +120,7 @@ a {
   top: 0;
   left: 0;
   background-color: var(--palette-secondary);
+  min-height: 69px;
 }
 
 .page-header-logo {
@@ -151,7 +155,7 @@ a {
   z-index: -1;
   background-size: cover;
   background-position: bottom;
-  padding-top: 100px;
+  padding-top: var(--promo-top-padding);
   padding-bottom: 100px;
 }
 
@@ -248,14 +252,14 @@ a {
 .form-button {
   padding: 13px 36px;
   background: transparent;
-  border: 1px var(--palette-decoration) solid;
+  border: 1px solid var(--palette-decoration);
   color: var(--palette-decoration);
   font-size: 16px;
 }
 
 .field {
   width: 366px;
-  border: 2px var(--palette-decoration) solid;
+  border: 2px solid var(--palette-decoration);
   padding-bottom: 25px;
   padding-top: 30px;
   padding-left: 20px;
