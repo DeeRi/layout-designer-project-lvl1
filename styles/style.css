@@ -47,7 +47,7 @@ a {
 .titles-h2 {
   font-size: 32px;
   margin: 0;
-  margin-bottom: 24px;
+  padding: 0 0 24px 0;
 }
 
 .flex-sp-between {
@@ -126,28 +126,33 @@ a {
 }
 
 .page-header-logo {
-  padding-left: 20px;
+  padding: 0 0 0 20px;
 }
 
 .logo-image {
-  margin-right: 18px;
+  margin: 0 18px 0 0;
 }
 
 .site-list {
-  padding-right: 20px;
+  padding: 0 20px 0 0;
   display: flex;
 }
 
 .site-list-item {
-  margin-right: 20px;
+  margin: 0 20px 0 0;
 }
 
 .site-list-item:last-child {
-  margin-right: 0px;
+  margin: 0px;
 }
 
 .site-list-link {
   color: var(--palette-primary);
+}
+
+/*PAGE-MAIN*/
+.page-main {
+  padding: var(--header-height) 0 0 0;
 }
 
 /*PROMO*/
@@ -157,9 +162,7 @@ a {
   z-index: -1;
   background-size: cover;
   background-position: bottom;
-  margin-top: var(--header-height);
-  padding-top: 34px;
-  padding-bottom: 100px;
+  padding: 34px 0 100px 0;
 }
 
 .promo-content {
@@ -172,30 +175,26 @@ a {
 .promo-title {
   font-size: 48px;
   margin: 0;
-  margin-top: 17px;
+  padding: 17px 0 0 0;
 }
 
 .promo-motto {
   font-size: 18px;
   letter-spacing: 0.4px;
   margin: 0;
-  margin-top: 3px;
+  padding: 3px 0 0 0;
 }
 
 .promo-button {
+  margin: 23px 0 0 0;
   padding: 13px 14px;
   border: 1px solid var(--palette-secondary);
   letter-spacing: 0.8px;
-  margin-top: 23px;
 }
 
 /*ADVANTAGES*/
 .advantages {
-  padding-top: 69px;
-}
-
-.advantages-title {
-  margin-bottom: 16px;
+  padding: 69px 0;
 }
 
 .advantages-text {
@@ -209,8 +208,7 @@ a {
 
 /*MAIN SECTION*/
 .main-section {
-  padding-top: 62px;
-  padding-bottom: 62px;
+  padding: 62px 0;
 }
 
 .main-section-wrapper {
@@ -229,19 +227,22 @@ a {
 }
 
 .main-section-info-first {
-  margin-bottom: 20px;
+  padding: 0 0 20px 0;
 }
 
 /*FORM*/
+.form {
+  padding: 50px 0;
+}
+
 .form-content {
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 68px;
-  padding-top: 30px;
 }
 
 .form-title {
-  margin-bottom: 34px;
+  margin: 0;
+  padding: 0 0 34px 0;
 }
 
 .form-button {
@@ -255,15 +256,12 @@ a {
 .field {
   width: 366px;
   border: 2px solid var(--palette-decoration);
-  padding-bottom: 25px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 70px;
-  margin-bottom: 17px;
+  padding: 30px 70px 25px 20px;
+  margin: 0 0 17px 0;
 }
 
 .field:last-child {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .field-item {
@@ -285,8 +283,8 @@ a {
   height: 23px;
   border-radius: 10px;
   border: 1px solid var(--input-border);
-  padding-left: 8px;
-  margin-bottom: 10px;
+  padding: 0 0 0 8px;
+  margin: 0 0 10px 0;
 }
 
 .field-information--small {
@@ -297,8 +295,7 @@ a {
 
 /*FOOTER*/
 .footer-main {
-  padding-top: 65px;
-  padding-bottom: 78px;
+  padding: 55px 0;
   background-color: var(--palette-primary);
 }
 
@@ -308,7 +305,7 @@ a {
 }
 
 .footer-main .page-header-logo {
-  padding-left: 0;
+  padding: 0;
 }
 
 .footer-main .logo-text {
@@ -319,7 +316,7 @@ a {
 .footer-main-year {
   display: block;
   font-size: 14px;
-  margin-top: 13px;
+  padding: 13px 0 0 0;
 }
 
 .footer-main-link {
