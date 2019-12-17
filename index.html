@@ -11,10 +11,10 @@
   <body>
     <!--PAGE-HEADER-->
 
-    <header class="page-header flex-sp-between flex-align-items-center  w-100per">
+    <header class="page-header flex-items-centered-sp-between w-100per background-white">
       <!--LOGO-->
       <div class="page-header-logo logo font-bold">
-        <a class="logo-link flex-align-items-center "
+        <a class="logo-link flex-items-centered"
           ><img
             class="logo-image"
             src="images/logo.svg"
@@ -51,7 +51,7 @@
       <!--PROMO-->
 
       <section class="promo w-100per white-text font-bold">
-        <div class="promo-content flex-align-items-center ">
+        <div class="promo-content flex-column-centered">
           <img
             class="promo-logo"
             src="images/logo.svg"
@@ -69,18 +69,18 @@
 
       <!--ADVANTAGES-->
 
-      <section class="advantages" id="advantages">
+      <section class="advantages section-padding-common" id="advantages">
         <div class="advantages-content container">
           <ul class="advantages-list flex-sp-between reset-list">
             <li class="advantages-item">
-              <h2 class="advantages-title titles-h2">Уникальный вид</h2>
+              <h2 class="advantages-title common-titles-h2">Уникальный вид</h2>
               <p class="advantages-text">
                 Вид на космос из вашего окна. Мы построили дома с большими
                 окнами, чтобы вы могли наслаждаться метеоритными потоками.
               </p>
             </li>
             <li class="advantages-item">
-              <h2 class="advantages-title titles-h2">Инфраструктура</h2>
+              <h2 class="advantages-title common-titles-h2">Инфраструктура</h2>
               <p class="advantages-text">
                 Прекрасные дороги рядом с домом. Много мест для прогулки. Всего
                 в 200 км. от посёлка находится кольцо гор Кордильеры, на которых
@@ -88,7 +88,7 @@
               </p>
             </li>
             <li class="advantages-item">
-              <h2 class="advantages-title titles-h2">Близость к Москве</h2>
+              <h2 class="advantages-title common-titles-h2">Близость к Москве</h2>
               <p class="advantages-text">
                 При небольшой цене мы располагаемся близко к МКАД. Всего 384 000
                 километров и вы в самом сердце России.
@@ -100,10 +100,10 @@
 
       <!--ABOUT-->
 
-      <section class="about main-section background-grey" id="about">
+      <section class="about main-section section-padding-common background-grey" id="about">
         <div class="main-section-wrapper container">
           <div class="main-section-text">
-            <h2 class="main-section-title titles-h2">О ЖК "Лунное море"</h2>
+            <h2 class="main-section-title common-titles-h2">О ЖК "Лунное море"</h2>
             <p class="main-section-info main-section-info-first">
               Все чаще жители Москвы предпочитают загородный дом городской
               квартире, к тому же связь с мегаполисом не теряется – современные
@@ -126,7 +126,7 @@
 
       <!--PLACES-->
 
-      <section class="places main-section" id="places">
+      <section class="places main-section section-padding-common" id="places">
         <div
           class="main-section-wrapper container"
         >
@@ -137,7 +137,7 @@
             height="250"
           />
           <div class="main-section-text">
-            <h2 class="main-section-title titles-h2">Места для отдыха</h2>
+            <h2 class="main-section-title common-titles-h2">Места для отдыха</h2>
             <p class="main-section-info main-section-info-first">
               Луна обладает всеми условиями для комфортного отдыха от большого
               города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее
@@ -153,13 +153,13 @@
 
       <!--FORM-->
 
-      <section class="form background-grey" id="form">
-        <div class="form-content flex-align-items-center container">
-          <h2 class="form-title">Оставьте заявку сегодня!</h2>
+      <section class="form background-grey section-padding-common" id="form">
+        <div class="form-content flex-column-centered container">
+          <h2 class="form-title common-titles-h2">Оставьте заявку сегодня!</h2>
           <form class="font-bold" action="URL" method="POST">
             <fieldset class="field">
               <legend class="field-title">Параметры квартиры</legend>
-              <p class="field-item flex-sp-between flex-align-items-center">
+              <p class="field-item flex-items-centered-sp-between">
                 <label class="field-capture" for="room_number"
                   >Количество комнат:</label
                 >
@@ -174,7 +174,7 @@
                 </select>
               </p>
 
-              <p class="field-item flex-sp-between flex-align-items-center">
+              <p class="field-item flex-items-centered-sp-between">
                 <label class="field-capture" for="condition">Отделка:</label>
                 <select
                   class="field-information field-information--small background-white"
@@ -190,15 +190,15 @@
 
             <fieldset class="field">
               <legend class="field-title">Контактная информация</legend>
-              <p class="field-item flex-sp-between flex-align-items-center">
+              <p class="field-item flex-items-centered-sp-between">
                 <label class="field-capture" for="name">Имя:</label>
                 <input class="field-information" type="text" id="name" />
               </p>
-              <p class="field-item flex-sp-between flex-align-items-center ">
+              <p class="field-item flex-items-centered-sp-between">
                 <label class="field-capture" for="phone">Телефон:</label>
                 <input class="field-information" type="text" id="phone" />
               </p>
-              <p class="field-item flex-sp-between flex-align-items-center">
+              <p class="field-item flex-items-centered-sp-between">
                 <label class="field-capture" for="mail">E-mail:</label>
                 <input class="field-information" type="text" id="mail" />
               </p>
@@ -216,10 +216,10 @@
     <!--FOOTER-->
 
     <footer class="footer-main white-text">
-      <div class="footer-main-wrapper">
+      <div class="footer-main-wrapper flex-sp-around">
         <div class="footer-main-col">
           <div class="page-header-logo logo font-bold">
-            <a class="logo-link flex-align-items-center"
+            <a class="logo-link flex-items-centered"
               ><img
                 class="logo-image"
                 src="images/logo.svg"

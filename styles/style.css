@@ -44,22 +44,48 @@ a {
   margin: 0 auto;
 }
 
-.titles-h2 {
+.common-titles-h2 {
   font-size: 32px;
   margin: 0;
-  padding: 0 0 24px 0;
+  padding: 0 0 34px 0;
 }
 
+/*FLEX CLASSES*/
 .flex-sp-between {
   display: flex;
   justify-content: space-between;
 }
 
-.flex-align-items-center {
+.flex-sp-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-items-centered {
   display: flex;
   align-items: center;
 }
 
+.flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-items-centered-sp-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*LINKS AND BUTTONS*/
 .link-common {
   font-weight: bold;
 }
@@ -90,6 +116,25 @@ a {
   color: var(--background-secondary);
 }
 
+/*TEXT AND FONTS*/
+.white-text {
+  color: var(--palette-secondary);
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/*BACKGROUND*/
+.background-white {
+  background-color: var(--background-main);
+}
+
+.background-grey {
+  background-color: var(--background-secondary);
+}
+
+/*UTILITIES*/
 .w-100per {
   width: 100%;
 }
@@ -100,20 +145,8 @@ a {
   list-style: none;
 }
 
-.white-text {
-  color: var(--palette-secondary);
-}
-
-.font-bold {
-  font-weight: bold;
-}
-
-.background-white {
-  background-color: var(--background-main);
-}
-
-.background-grey {
-  background-color: var(--background-secondary);
+.section-padding-common {
+  padding: 62px 0;
 }
 
 /*HEADER*/
@@ -121,7 +154,6 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--palette-secondary);
   height: 69px;
 }
 
@@ -166,9 +198,6 @@ a {
 }
 
 .promo-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
 }
 
@@ -193,10 +222,6 @@ a {
 }
 
 /*ADVANTAGES*/
-.advantages {
-  padding: 69px 0;
-}
-
 .advantages-text {
   line-height: 23px;
   margin: 0;
@@ -207,10 +232,6 @@ a {
 }
 
 /*MAIN SECTION*/
-.main-section {
-  padding: 62px 0;
-}
-
 .main-section-wrapper {
   display: flex;
   justify-content: space-between;
@@ -231,20 +252,6 @@ a {
 }
 
 /*FORM*/
-.form {
-  padding: 50px 0;
-}
-
-.form-content {
-  flex-direction: column;
-  justify-content: center;
-}
-
-.form-title {
-  margin: 0;
-  padding: 0 0 34px 0;
-}
-
 .form-button {
   padding: 13px 36px;
   background: transparent;
@@ -297,11 +304,6 @@ a {
 .footer-main {
   padding: 55px 0;
   background-color: var(--palette-primary);
-}
-
-.footer-main-wrapper {
-  display: flex;
-  justify-content: space-around;
 }
 
 .footer-main .page-header-logo {
