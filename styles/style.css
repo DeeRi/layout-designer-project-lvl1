@@ -154,7 +154,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  height: 69px;
+  height: var(--header-height);
 }
 
 .page-header-logo {
@@ -306,11 +306,7 @@ a {
   background-color: var(--palette-primary);
 }
 
-.footer-main .page-header-logo {
-  padding: 0;
-}
-
-.footer-main .logo-text {
+.footer-main-logo-text {
   font-size: 15px;
   letter-spacing: 0.1px;
 }
